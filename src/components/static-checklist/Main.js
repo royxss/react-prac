@@ -24,6 +24,7 @@ export default class Main extends Component {
     this.state = {
         mainCount: itemList1.length + itemList2.length + itemList3.length
     };
+    this.mainCounterDown = this.mainCounterDown.bind(this);
   }
 
   mainCounterDown() {
@@ -43,16 +44,19 @@ export default class Main extends Component {
           <App
             topicName = {topicName1}
             itemList = {itemList1}
+            mainCounterDown = {this.mainCounterDown}
           />
   
           <App
             topicName = {topicName2}
             itemList = {itemList2}
+            mainCounterDown = {this.mainCounterDown}
           />
   
           <App
             topicName = {topicName3}
             itemList = {itemList3}
+            mainCounterDown = {this.mainCounterDown}
           /> 
         </div>
       )}

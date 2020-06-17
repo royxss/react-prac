@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import Main from './components/static-checklist/Main';
-import App from './components/profile/App';
+import Main from './components/static-checklist/Main';
+//import App from './components/profile/App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-<App />,
+<Main />,
   document.getElementById('root')
 );
 

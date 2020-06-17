@@ -14,13 +14,13 @@ export default class App extends Component {
       }
 
     resetState() {
-        alert("Undone Complete...");
+        console.log("Undone Complete...");
     }  
 
     counterDown() {
 
         // Counter down main
-        // this.props.mainCounterDown();
+        this.props.mainCounterDown()
 
         let { count } = this.state; 
         count =  count - 1;
